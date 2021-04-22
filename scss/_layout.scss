@@ -1,0 +1,103 @@
+// Header style code start
+header {
+  position: relative;
+  #particles-js {
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      border: 0.5px solid $primary;
+      padding: 5px;
+      box-shadow:  0 0 20px rgba(0, 78, 7, 0.7);
+      opacity: 0;
+      animation: imgTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s 1 forwards;
+    }
+
+    .title {
+      font-size: 32px;
+      color: $primary;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      text-align: center;
+      animation: titleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s 1 forwards;
+
+      &::selection {
+        background-color: $primary;
+        color: $white;
+      }
+    }
+
+    .subtitle {
+      font-family: 'Dancing Script', cursive;
+      font-size: 22px;
+      color: $dark-primary;
+      position: absolute;
+      top: 56%;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      text-align: center;
+      animation: subtitleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1 forwards;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
+    }
+  }
+}
+// Header style code end
+
+// About style code start
+.about-me {
+  width: 100%;
+  height: 350px;
+
+  .box {
+    margin-top: 85px;
+
+    h3 {
+      color: $dark-primary;
+      margin-bottom: 15px;
+      font-size: 18px;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
+    }
+  
+    p {
+      text-align: justify;
+      color: $dark-primary;
+      margin-bottom: 10px;
+      font-size: 14px;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
+
+      span {
+        color: $primary;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+        &::selection {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+// About style code end
