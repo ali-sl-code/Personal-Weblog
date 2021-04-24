@@ -24,6 +24,19 @@ body {
 }
 
 // Varibls
+$light-primary: #005e08;
 $primary: #003b05;
 $dark-primary: #002703;
 $white: #ffffff;
+$light: #f6f6f6;
+$gray: #808080;
+$dark: #555555;
+
+// Mixin
+@mixin flex($direction, $wrap, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  align-items: $align;
+  justify-content: $justify;
+}
