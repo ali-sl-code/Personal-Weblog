@@ -49,6 +49,10 @@
   background-color: $white;
 }
 
+.disable {
+  cursor: not-allowed !important;
+}
+
 .skil {
   width: 100%;
   margin: 15px 0;
@@ -62,11 +66,21 @@
       color: $dark-primary;
       font-weight: 500;
       font-size: 20px;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
     }
 
     span {
       color: $primary;
       font-size: 15px;
+
+      &::selection {
+        background-color: $primary;
+        color: $white;
+      }
     }
   }
 
@@ -89,4 +103,116 @@
   font-size: 26px;
   font-weight: 500;
   margin: 10px 0 25px 0;
+
+  &::selection {
+    background-color: $dark-primary;
+    color: $white;
+  }
+}
+
+.project-div {
+  border: 1px solid $light-primary;
+  padding: 3px 5px;
+  border-radius: 2px 25px 2px 2px;
+  transition: all 0.5s;
+  box-shadow: 0 0 5px rgba(0, 78, 7, 0.7);
+  margin-bottom: 50px;
+
+  .project-div-img {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 2px 25px 2px 2px;
+    transition: border-radius 0.5s;
+
+    img {
+      width: 100%;
+      height: 130px;
+      overflow: hidden;
+      transition: transform 0.5s;
+    }
+
+    &:hover {
+      border-radius: 2px 2px 2px 2px;
+    }
+  }
+
+  .project-div-con {
+    margin: 5px 0;
+
+    .project-div-con-titlle {
+      font-size: 20px;
+      font-weight: 400;
+      padding: 15px 0;
+      color: $dark-primary;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
+    }
+
+    .project-div-con-item {
+      color: $dark-primary;
+      font-size: 16px;
+      margin-bottom: 5px;
+
+      &::selection {
+        background-color: $dark-primary;
+        color: $white;
+      }
+
+      span {
+        color: $primary;
+        font-size: 15px;
+        margin-left: 5px;
+
+        &::selection {
+          background-color: $primary;
+          color: $white;
+        }
+
+        a {
+          color: $primary;
+          font-size: 15px;
+          margin-left: 5px;
+          text-decoration: none;
+
+          &::selection {
+            background-color: $primary;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .project-div-con-link {
+      display: block;
+      color: $primary;
+      background-color: transparent;
+      border: 1px solid $primary;
+      width: 80%;
+      text-align: center;
+      padding: 7px 0;
+      font-size: 16px;
+      margin: 8px auto;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $white;
+        background-color: $primary;
+      }
+    }
+  }
+
+  &:hover {
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 15px rgba(0, 78, 7, 0.7);
+
+    .project-div-img img {
+      transform: scale(1.2);
+    }
+  }
 }
