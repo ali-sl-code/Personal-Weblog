@@ -1,6 +1,7 @@
 // body style code start
 body {
   background-color: $light;
+  overflow-x: hidden;
 }
 // body style code end
 
@@ -17,7 +18,7 @@ header {
       position: absolute;
       left: 0;
       right: 0;
-      top: 0;
+      top: 20%;
       border: 0.5px solid $primary;
       padding: 5px;
       box-shadow:  0 0 20px rgba(0, 78, 7, 0.7);
@@ -26,14 +27,16 @@ header {
     }
 
     .title {
+      width: 300px;
       font-size: 32px;
       color: $primary;
       position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
+      top: 35%;
+      right: auto;
+      left: auto;
       opacity: 0;
       text-align: center;
+      margin: auto;
       animation: titleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s 1 forwards;
 
       &::selection {
@@ -43,15 +46,17 @@ header {
     }
 
     .subtitle {
+      width: 300px;
       font-family: 'Dancing Script', cursive;
       font-size: 22px;
       color: $dark-primary;
       position: absolute;
-      top: 56%;
-      left: 0;
-      right: 0;
+      top: 40%;
+      right: auto;
+      left: auto;
       opacity: 0;
       text-align: center;
+      margin: auto;
       animation: subtitleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1 forwards;
 
       &::selection {
@@ -119,6 +124,12 @@ header {
   background-color: $white;
   border-top: 0.5px solid $primary;
   border-bottom: 0.5px solid $primary;
+
+  .skils-div {
+    width: 100%;
+    height: auto;
+    @include flex(row, wrap, flex-start, space-between);
+  }
 
   .html {
     width: 80%;
@@ -224,11 +235,12 @@ header {
       margin-top: 15px;
 
       ul {
-        @include flex(row, wrap, center, space-around);
+        @include flex(row, wrap, center, center);
         list-style: none;
 
         li {
           font-size: 20px;
+          margin: 0 10px;
 
           a {
             color: $dark-primary;
@@ -257,7 +269,7 @@ header {
   .project-flex {
     width: 100%;
     height: auto;
-    @include flex(column, wrap, center, space-around);
+    @include flex(row, wrap, flex-start, space-around);
   }
 }
 // project sect style code end
