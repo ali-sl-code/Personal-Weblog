@@ -5,6 +5,19 @@ body {
 }
 // body style code end
 
+// Preloader code start
+.preloader{
+  @include flex(column, wrap, center, center);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  z-index: 999;
+}
+// Preloader code end
+
 // Header style code start
 header {
   position: relative;
@@ -23,7 +36,7 @@ header {
       padding: 5px;
       box-shadow:  0 0 20px rgba(0, 78, 7, 0.7);
       opacity: 0;
-      animation: imgTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1s 1 forwards;
+      animation: imgTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1 forwards;
     }
 
     .title {
@@ -37,7 +50,7 @@ header {
       opacity: 0;
       text-align: center;
       margin: auto;
-      animation: titleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s 1 forwards;
+      animation: titleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2.5s 1 forwards;
 
       &::selection {
         background-color: $primary;
@@ -57,7 +70,7 @@ header {
       opacity: 0;
       text-align: center;
       margin: auto;
-      animation: subtitleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2s 1 forwards;
+      animation: subtitleTopToBottom 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) 3s 1 forwards;
 
       &::selection {
         background-color: $dark-primary;
