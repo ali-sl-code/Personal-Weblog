@@ -43,7 +43,7 @@
       opacity: 1;
   }
 }
-.project-div {
+.project {
   width: 60%;
 }
 }
@@ -71,7 +71,7 @@
   .skil {
     width: 45%;
   }
-  .project-div {
+  .project {
     width: 45%;
   }
   .about-me .container {
@@ -157,7 +157,7 @@ header {
       top: 45% !important;
     }
   }
-  .project-div {
+  .project {
     width: 30%;
   }
 }
@@ -191,11 +191,11 @@ header {
   }
 }
 
-.project-div {
-  .project-div-img  {
-    height: 200px !important;
-  }
-}
+// .project-div {
+//   .project-div-img  {
+//     height: 200px !important;
+//   }
+// }
 header {
   .title {
     top: 45% !important;
@@ -266,7 +266,7 @@ header {
       font-size: 35px !important;
     }
   }
-  .project-div {
+  .project {
     width: 22%;
   }
 }
@@ -282,28 +282,28 @@ header {
     }
   }
 
-  .project-div {
-    .project-div-img {
-      height: 250px !important;
-    }
-  }
-  .project-div-con {
-    .project-div-con-titlle {
-      font-size: 24px !important;
-    }
-    .project-div-con-item {
-      font-size: 19px !important;
+  // .project-div {
+  //   .project-div-img {
+  //     height: 250px !important;
+  //   }
+  // }
+  // .project-div-con {
+  //   .project-div-con-titlle {
+  //     font-size: 24px !important;
+  //   }
+  //   .project-div-con-item {
+  //     font-size: 19px !important;
 
-      span,
-      a {
-        font-size: 18px !important;
-      }
-    }
-    .project-div-con-link {
-      width: 70% !important;
-      font-size: 19px !important;
-    }
-  }
+  //     span,
+  //     a {
+  //       font-size: 18px !important;
+  //     }
+  //   }
+  //   .project-div-con-link {
+  //     width: 70% !important;
+  //     font-size: 19px !important;
+  //   }
+  // }
   .about-me {
     height: 550px !important;
 
